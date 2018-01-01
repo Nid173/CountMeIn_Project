@@ -47,3 +47,11 @@ a{
 	  left: 243px;
 	  font-family:"Helvetica";
 }
+
+.dashBoard{
+  background-color: #f4f4f4;
+  opacity: 50%;
+  border-top-right-radius:35px;
+  border-top-left-radius: 35px;
+  margin: 12px 5px 0 5px;
+}
