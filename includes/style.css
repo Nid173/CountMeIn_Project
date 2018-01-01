@@ -42,7 +42,7 @@ a{
 	  position: relative;
 	  display: inline-block;
 	  left: 243px;
-	  
+
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
@@ -73,7 +73,28 @@ a{
 .dashBoard{
   background-color: #f4f4f4;
   opacity: 50%;
-  border-top-right-radius:35px;
-  border-top-left-radius: 35px;
   margin: 12px 5px 0 5px;
+}
+
+.title{
+  background-color: #f0865a;
+  border: solid 1px #f89406;
+  font-family: 'Advent Pro', sans-serif;
+  text-align: center;
+  font-size: 26px;
+  color: white;
+  padding: 10px 0 10px 0;
+  margin: 0;
+}
+.radius-top-left{
+    border-top-left-radius:35px;
+}
+.radius-top-right{
+  border-top-right-radius: 35px;
+}
+.radius-bottom-right{
+  border-bottom-right-radius:35px;
+}
+.radius-bottom-left{
+  border-bottom-left-radius:35px;
 }
