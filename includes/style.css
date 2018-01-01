@@ -76,7 +76,10 @@ a{
   margin: 12px 5px 0 5px;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 81a424bdf8fddc25af48bcc3ca02da2d281fc33c
 
 .OptionHeader{
 	
@@ -91,7 +94,7 @@ a{
   font-family: 'Advent Pro', sans-serif;
   text-align: center;
   font-size: 26px;
-  color: white;
+  color: #fff;
   padding: 10px 0 10px 0;
   margin: 0;
 }
@@ -106,6 +109,9 @@ a{
 }
 .radius-bottom-left{
   border-bottom-left-radius:35px;
+<<<<<<< HEAD
 
 >>>>>>> Nidal_nawatha
+=======
+>>>>>>> 81a424bdf8fddc25af48bcc3ca02da2d281fc33c
 }
