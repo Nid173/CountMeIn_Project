@@ -76,6 +76,13 @@ a{
   margin: 12px 5px 0 5px;
 }
 
+.OptionHeader{
+	
+}
+.OptionSearch{
+}	
+
+
 .title{
   background-color: #f0865a;
   border: solid 1px #f89406;
@@ -97,4 +104,5 @@ a{
 }
 .radius-bottom-left{
   border-bottom-left-radius:35px;
+
 }
