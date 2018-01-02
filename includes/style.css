@@ -55,6 +55,8 @@ footer{
   clear: both;
   height: 62px;
   padding-top: 23px;
+  text-align: center;
+  color: 
 }
 @media (min-width: 768px){
   #logoSec{
