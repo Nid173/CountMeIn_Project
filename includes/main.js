@@ -33,12 +33,15 @@ function DashCalendar(){
   for(var i=0;i<7;i++){
 
     var elem = document.createElement('div');
-    elem.className = "col-sm-1";
+    elem.className = "col-xs-1";
     elem.innerHTML=days[week.index];
         week.index = ValidateDayUp(week.index)+1;
     var insideelem = document.createElement('article');
     insideelem.className ="dateCircle";
-    insideelem.innerHTML=week.date+i;
+    var today = week.date+i;
+    if( today == date.getDate())
+      insideelem.className +=" active";
+    insideelem.innerHTML=today;
     elem.appendChild(insideelem);
     if(i==0)
       elem.className+=" col-md-offset-2";

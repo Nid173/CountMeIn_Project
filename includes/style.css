@@ -187,3 +187,6 @@ border-radius: 0 50px 50px 0 !important;
     font-weight: 700;
     margin-top: 15px;
 }
+#dashBoard .active{
+  border:solid 1px #f0865a;
+}
