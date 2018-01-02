@@ -94,6 +94,11 @@ a{
 }
 .weekSection{
   background: #f4f4f4;
+  padding: 15px 0 15px 69px;
+  text-align: center;
+  font-family: 'Advent Pro', sans-serif;
+  color: #cccccc;
+  font-size: 14px;
 }
 .radius-top-left{
     border-top-left-radius:35px;
@@ -151,7 +156,7 @@ a{
     }
 
 #searchbtn
-{ 
+{
 border:0;
   padding: 0px 10px;
   margin-top: 10px;
@@ -169,6 +174,19 @@ border-radius: 0 50px 50px 0 !important;
 .test{
 	margin: 15px 5px 15px 5px;
 }
-footer{
-	clear: both;
+.black{background-color: black;}
+.yellow{background-color: yellow;}
+
+.dateCircle {
+    border-radius: 50%;
+    width: 5vw;
+    height: 5vw;
+    background-color: #eeeeee;
+    padding-top: 1.7vw;
+    color: #000;
+    font-weight: 700;
+    margin-top: 15px;
+}
+#dashBoard .active{
+  border:solid 1px #f0865a;
 }
