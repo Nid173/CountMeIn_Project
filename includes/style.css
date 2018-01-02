@@ -70,22 +70,16 @@ a{
 	margin-left: 59px;
 }
 
-.dashBoard{
+#dashBoard{
   background-color: #f4f4f4;
   opacity: 50%;
   margin: 12px 5px 0 5px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 81a424bdf8fddc25af48bcc3ca02da2d281fc33c
-
 .OptionHeader{
-	
+
 }
 .OptionSearch{
-}	
+}
 
 
 .title{
@@ -98,6 +92,9 @@ a{
   padding: 10px 0 10px 0;
   margin: 0;
 }
+.weekSection{
+  background: #f4f4f4;
+}
 .radius-top-left{
     border-top-left-radius:35px;
 }
@@ -109,11 +106,6 @@ a{
 }
 .radius-bottom-left{
   border-bottom-left-radius:35px;
-<<<<<<< HEAD
-
->>>>>>> Nidal_nawatha
-=======
->>>>>>> 81a424bdf8fddc25af48bcc3ca02da2d281fc33c
 }
 .bottom-border-none{
 	border-bottom: none;
