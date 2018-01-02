@@ -44,7 +44,7 @@ function DashCalendar(){
     insideelem.innerHTML=today;
     elem.appendChild(insideelem);
     if(i==0)
-      elem.className+=" col-md-offset-2";
+      elem.className+=" col-xs-offset-2";
     dashsection.children[1].children[0].appendChild(elem);
   }
 };
