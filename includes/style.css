@@ -10,11 +10,13 @@ header{
 body{
 	font-family:"Helvetica";
 }
+/*
 a{
   text-decoration: none;
   padding: 23px 18px 23px 18px;
   color:#000000;
 }
+*/
 #logoSec{
   width: 115px;
   height: 62px;
@@ -74,11 +76,6 @@ a{
   background-color: #f4f4f4;
   opacity: 50%;
   margin: 12px 5px 0 5px;
-}
-.OptionHeader{
-
-}
-.OptionSearch{
 }
 
 
@@ -189,4 +186,29 @@ border-radius: 0 50px 50px 0 !important;
 }
 #dashBoard .active{
   border:solid 1px #f0865a;
+}
+
+.sidebarDiv{
+	height:36px;
+	border-bottom: 1px solid #cccccc;
+	width:90%;
+	text-align: -webkit-left;
+	padding-top:8px;
+	}
+.checkbox{
+	font-size: 10px;
+	
+}
+.toggle{
+ display:inline-block;
+height:25px;
+width:25px;  
+background:url("../images/PLUS1.png");
+background-size:25px 25px;
+}
+.toggle.expanded{
+  height:25px;
+  width:25px;  
+  background:url("../images/MINUS1.png");
+  background-size:25px 25px;
 }
