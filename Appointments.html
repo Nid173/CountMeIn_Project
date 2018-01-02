@@ -6,9 +6,16 @@
     <link href="includes/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="includes/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" async></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
     <script src="includes/js/bootstrap.min.js" async></script>
+        <script src="includes/main.js" async></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abril+Fatface" />
      <link href="https://fonts.googleapis.com/css?family=Advent+Pro:100" rel="stylesheet">
+     
     <title>CountMeIn</title>
   </head>
   <body>
@@ -60,13 +67,43 @@
 								    </div>
 									</div>
 						   	</div>
-			      			<div class="row WindowContent radius-bottom-right">3 </div>
+			      			<div class="row WindowContent radius-bottom-right">
+				      			<div class="sidebarDiv"><span class="glyphicon">&#xe081;</span> Add appointment</div>
+				      			<div class="sidebarDiv"><span class="glyphicon">&#xe082;</span> Cancel appointment</div>
+				      			<div class="sidebarDiv"><span class="glyphicon">&#xe006;</span> Rate appointment</div>
+				      			<div> 1</div>
+				      			
+				      			 </div>
 	        	</div>
 	        <div class="col-md-7 col-xs-12">
 		        		<div class="row title radius-top-right bottom-border-none"> 
-						   <div class="whiteLine80"> Today </div>
+						   <div class="whiteLine80"><span class="glyphicon glyphicon-triangle-left"></span>
+							    Today 
+							    <span class="glyphicon glyphicon-triangle-right"></span></div>
 						   </div>
-					   	<div class="row title top-border-none"> 2</div>
+					   	<div class="row title top-border-none">
+						   	    <div class="checkbox disabled">
+						   		<label><input type="checkbox" value="" disabled>Show unplanned time</label>
+						   	    </div>
+						   	    
+						   	    
+					   	</div>
+					   	<div class="row WindowContent radius-bottom-left">
+<!-- 						   		TABLE -->
+						   	<table class="table table-striped">
+							  <thead>
+							    <tr>
+							      <th scope="col">#</th>
+							      <th scope="col">Full Name</th>
+							      <th scope="col">Time</th>
+							      <th scope="col">Purpose</th>
+							    </tr>
+							  </thead>
+							  <tbody id="tbody">
+							  
+							  </tbody>
+							</table>
+					   	</div>
 	        </div>   
         </div>
       </div>
@@ -75,6 +112,11 @@
     <footer>
 
     </footer>
+       <script>
+    (function(){
+      addTableRow();
+    })();
+    </script>
 
   </body>
 </html>

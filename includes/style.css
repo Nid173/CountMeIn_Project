@@ -10,6 +10,10 @@ header{
   height: 62px;
   background-color: #f4f4f4;
 }
+body{
+	font-family:"Helvetica";
+}
+
 #logoSec{
   width: 115px;
   height: 62px;
@@ -63,6 +67,7 @@ footer{
   opacity: 50%;
   margin: 12px 5px 0 5px;
 }
+
 
 .title{
   background-color: #f0865a;
@@ -169,4 +174,29 @@ border-radius: 0 50px 50px 0 !important;
 }
 #dashBoard .active{
   border:solid 1px #f0865a;
+}
+
+.sidebarDiv{
+	height:36px;
+	border-bottom: 1px solid #cccccc;
+	width:90%;
+	text-align: -webkit-left;
+	padding-top:8px;
+	}
+.checkbox{
+	font-size: 10px;
+	
+}
+.toggle{
+ display:inline-block;
+height:25px;
+width:25px;  
+background:url("../images/PLUS1.png");
+background-size:25px 25px;
+}
+.toggle.expanded{
+  height:25px;
+  width:25px;  
+  background:url("../images/MINUS1.png");
+  background-size:25px 25px;
 }
