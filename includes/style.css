@@ -1,3 +1,7 @@
+body{
+	font-family:"Helvetica";
+}
+
 *{padding: 0; margin: 0 auto;
 /* 	border: solid red 1px; */
 };
@@ -5,69 +9,51 @@ section,nav,article,header,main{display: block;}
 header{
   height: 62px;
   background-color: #f4f4f4;
-  position: relative;
-}
-body{
-	font-family:"Helvetica";
-}
-a{
-  text-decoration: none;
-  padding: 23px 18px 23px 18px;
-  color:#000000;
 }
 #logoSec{
   width: 115px;
   height: 62px;
+  padding-top: 23px;
+  margin-left: 10px;
   display: inline-block;
-  left:75px;
-  position: absolute;
   background: url("../images/Count_me_in_logo.png") no-repeat center left;
+
 }
 #brandName{
-  position: absolute;
-  left: 22px;
-  top:24px;
+  margin-left: 22px;
   font-size: 14px;
   font-family: "Abril Fatface";
   color:#000000;
 }
-.navbar-default {
-    background-color: #f4f4f4;
-    /* border-color: #e7e7e7; */
-}
-.navbar {
-      min-height: 50px;
-      border: none;
-      font-size: 14px;
-	  position: relative;
-	  display: inline-block;
-	  left: 243px;
 
+
+nav{
+  background-color: #f4f4f4;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    background-color: #92C6E4;
-    color:#f5f5f5;
-    font-weight:bold;
+nav .active>a{
+  background-color: #92C6E4;
+  font-weight:bold;
+    color:#fff;
 }
-
+nav a{
+    color: #000;
+}
 .navbar-nav>li>a {
     padding-top: 21px;
     padding-bottom: 21px;
 }
-.accountDiv{
-	border-left: #ffffff solid 2px;
-	position: absolute;
-	right:0px;
-	top:0px;
-	height:62px;
-	width:20%;
-	background: url("../images/User.png") no-repeat 18px center;
-	background-size: 27px 27px;
+.icon-bar{
+  border: 1px solid #000;
 }
-.accountName{
-	margin-top: 22px;
-	margin-left: 59px;
+
+footer{
+  clear: both;
+}
+@media (min-width: 768px){
+  #logoSec{
+    margin-left: 75px;
+}
 }
 
 #dashBoard{
@@ -174,8 +160,6 @@ border-radius: 0 50px 50px 0 !important;
 .test{
 	margin: 15px 5px 15px 5px;
 }
-.black{background-color: black;}
-.yellow{background-color: yellow;}
 
 .dateCircle {
     border-radius: 50%;
