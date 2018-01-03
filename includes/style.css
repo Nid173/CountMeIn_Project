@@ -194,7 +194,7 @@ border:0;
     box-shadow: none;
     min-height:30px;
     height: auto;
-border-radius: 0 50px 50px 0 !important;
+		border-radius: 0 50px 50px 0 !important;
 }
 
 .dateCircle {
@@ -245,6 +245,7 @@ background-size:25px 25px;
 
 #addappointment-form{
   padding-top: 35px;
+	padding-bottom: 10px;
 
 }
 #addappointment-form label{
@@ -265,6 +266,10 @@ background-size:25px 25px;
 	border-radius: 15px;
 	background-color: #f4f4f4;
 	padding: 15px;
+	display: none;
+}
+.otherRadio{
+	padding-left: 35px;
 }
 #otherPurpose>textarea{
 	border: 1px solid #f89406;
