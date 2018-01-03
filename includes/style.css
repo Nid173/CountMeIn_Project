@@ -225,9 +225,22 @@ background-size:25px 25px;
 #addappointment-form label{
   padding-top: 7px;
 }
-#addappointment-form input{
+#addappointment-form input,textarea{
   border: 1px solid #f89406;
 }
 #addappointment-form .purpose-section{
   margin-top: 30px;
+}
+#addappointment-form .whiteLine80{
+	margin-bottom: 33px;
+	height: 18px;
+}
+#otherPurpose{
+	border: 3px solid #fff;
+	border-radius: 15px;
+	background-color: #f4f4f4;
+	padding: 15px;
+}
+#otherPurpose>textarea{
+	border: 1px solid #f89406;
 }
