@@ -20,7 +20,8 @@
   </head>
   <body>
   <header>
-       <nav class="navbar">
+       
+      <nav class="navbar">
         <div class="container-fluid">
           <div class="navbar-header">
             <a href="#">
@@ -28,35 +29,59 @@
                         <span id="brandName">OuntMeIn</span>
               </section>
             </a>
+
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target= ".navHeaderCollapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+
+          <ul class="nav navbar-nav navbar-right visible-xs-block user-menu">
+            <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pazita
+      <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">create Page</a></li>
+      </ul>
+      </li>
+            </ul>
+
         </div>
 
           <div class="collapse navbar-collapse navHeaderCollapse">
             <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Dashboard</a></li>
-            <li><a href="#">Appointments</a></li>
+            <li><a href="index.html">Dashboard</a></li>
+            <li class="active"><a href="Appointments.html">Appointments</a></li>
             <li><a href="#">Call appointments</a></li>
             <li><a href="#">SMS logs</a></li>
           </ul>
+
+          <ul class="nav navbar-nav navbar-right hidden-xs">
+            <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pazita
+      <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">create Page</a></li>
+      </ul>
+    </li>
+            </ul>
           </div>
 
         </div>
       </nav>
-
      </header>
 
-    <main class="test">
+    <main >
+	    <h1 class="col-md-offset-4">Appointments</h1>
       <div class="container">
         <div class="row">
 <!-- 	        Options Menu -->
-	        	<div class="col-md-offset-1 col-md-3">
-		               <div class="row title OptionHeader radius-top-left bottom-border-none">
+	        	<div class="col-md-offset-1 col-md-3" id="search-menu">
+		               <div class="row title radius-top-left bottom-border-none">
 						   <div class="whiteLine80"> Options </div>  </div>
-						   	<div class="row title OptionSearch top-border-none">
+						   	<div class="row title top-border-none" >
 							   		<div class="row">
 								    <div class="col-xs-10 col-xs-offset-1">
 								    <form action="#" method="#" role="search">
@@ -72,9 +97,9 @@
 									</div>
 						   	</div>
 			      			<div class="row WindowContent radius-bottom-right">
-				      			<div class="sidebarDiv"><span class="glyphicon">&#xe081;</span> Add appointment</div>
-				      			<div class="sidebarDiv"><span class="glyphicon">&#xe082;</span> Cancel appointment</div>
-				      			<div class="sidebarDiv"><span class="glyphicon">&#xe006;</span> Rate appointment</div>
+				      			<a href="addAppointment.html"><div class="sidebarDiv"><span class="glyphicon">&#xe081;</span> Add appointment</div></a>
+				      			<a href="#"><div class="sidebarDiv"><span class="glyphicon">&#xe082;</span>Cancel appointment</div></a>
+				      			<a href="#"><div class="sidebarDiv"><span class="glyphicon">&#xe006;</span>Rate appointment</div></a>
 				      			<div> 1</div>
 
 				      			 </div>
