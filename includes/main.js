@@ -22,8 +22,9 @@ purposeArr.push({ purposeName: 'ghi', time: '30Minutes' });
 
 
 function addTableRow(){
-	
+
 	for (var i = 0; i < appointmentsArr.length; i++) {
+
   // use array[i] here 
   //check if syntax
   if(appointmentsArr[i].name1=='UnplannedTime'){
@@ -65,11 +66,12 @@ function addTableRow(){
 	if(i == appointmentsArr.length){
 		
 	}		
+
 	var mTbody = $('#tbody');
 	mTbody.append(code2Append);
 }
-	
-							
+
+
 };
 
 function ValidateDay(d){
@@ -84,7 +86,7 @@ function ValidateDayUp(d){
   if(d+1==7){
     d=-1;
   }
-  return d;
+  return ++d;
 };
 
 function DashCalendar(){
@@ -108,7 +110,7 @@ function DashCalendar(){
     var elem = document.createElement('div');
     elem.className = "col-xs-1";
     elem.innerHTML=days[week.index];
-        week.index = ValidateDayUp(week.index)+1;
+    week.index = ValidateDayUp(week.index);
     var insideelem = document.createElement('article');
     insideelem.className ="dateCircle";
     var today = week.date+i;
@@ -116,6 +118,7 @@ function DashCalendar(){
       insideelem.className +=" active";
     insideelem.innerHTML=today;
     elem.appendChild(insideelem);
+		console.log(today+" "+days[week.index-1]);
     if(i==0)
       elem.className+=" col-xs-offset-2";
     dashsection.children[1].children[0].appendChild(elem);
@@ -129,5 +132,3 @@ $(document).ready(function(){
 	$(this).closest('tr').next('tr').slideToggle();
   });
 });
-
-

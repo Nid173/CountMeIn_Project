@@ -13,6 +13,7 @@ header{
 body{
 	font-family:"Helvetica";
 }
+
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
 	vertical-align: middle;
 }
@@ -23,6 +24,12 @@ tbody tr:last-child td:first-child{
 tbody .alert-success{
 	min-height:33px
 }
+
+main{
+  margin: 15px 5px 15px 5px;
+}
+
+
 #logoSec{
   width: 115px;
   height: 62px;
@@ -64,6 +71,10 @@ footer{
   clear: both;
   height: 62px;
   padding-top: 23px;
+  text-align: center;
+  color:#c0c0c0;
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 400;
 }
 @media (min-width: 768px){
   #logoSec{
@@ -77,6 +88,11 @@ footer{
   margin: 12px 5px 0 5px;
 }
 
+h1{
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
 
 .title{
   background-color: #f0865a;
@@ -121,22 +137,24 @@ footer{
 }
 .WindowContent{
 	background:#f4f4f4;
+
 	margin:0px;
 	padding-bottom: 23px;
 }
 .hiddenStyle{
 	background-color: #F9C2AE !important;
+
 }
 
 
-.form-group {
+#search-menu .form-group {
     margin:0;
     padding:20px ;
 
     &:first-child { border-color: transparent; }
 }
 
-.form-control {
+#search-menu .form-control {
   padding: 0px 10px 0 20px;
   margin-top: 10px;
   color: #333;
@@ -148,7 +166,7 @@ footer{
     height: auto;
     border-radius: 50px 0  0 50px !important;
 }
-.form-control :focus {
+#search-menu .form-control :focus {
         -webkit-box-shadow: none;
         box-shadow: none;
         border-color: transparent;
@@ -170,9 +188,6 @@ border:0;
     min-height:30px;
     height: auto;
 border-radius: 0 50px 50px 0 !important;
-}
-.test{
-	margin: 15px 5px 15px 5px;
 }
 
 .dateCircle {
@@ -198,18 +213,52 @@ border-radius: 0 50px 50px 0 !important;
 	}
 .checkbox{
 	font-size: 10px;
-	
+
 }
 .toggle{
  display:inline-block;
 height:25px;
-width:25px;  
+width:25px;
 background:url("../images/PLUS1.png");
 background-size:25px 25px;
 }
 .toggle.expanded{
   height:25px;
-  width:25px;  
+  width:25px;
   background:url("../images/MINUS1.png");
   background-size:25px 25px;
+}
+
+
+/*user dropdown*/
+
+.user-menu{width:100px;float:right;margin:0;position: absolute;top:0;right:40px;background:#f4f4f4;overflow: hidden;}
+.user-menu>li>a{padding-top:15px;padding-bottom:15px;}
+
+
+#addappointment-form{
+  padding-top: 35px;
+
+}
+#addappointment-form label{
+  padding-top: 7px;
+}
+#addappointment-form input,textarea{
+  border: 1px solid #f89406;
+}
+#addappointment-form .purpose-section{
+  margin-top: 30px;
+}
+#addappointment-form .whiteLine80{
+	margin-bottom: 33px;
+	height: 18px;
+}
+#otherPurpose{
+	border: 3px solid #fff;
+	border-radius: 15px;
+	background-color: #f4f4f4;
+	padding: 15px;
+}
+#otherPurpose>textarea{
+	border: 1px solid #f89406;
 }
