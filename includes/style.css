@@ -13,9 +13,22 @@ header{
 body{
 	font-family:"Helvetica";
 }
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	vertical-align: middle;
+}
+tbody tr:last-child td:first-child{
+	border-bottom-left-radius:9px;
+	
+}
+tbody .alert-success{
+	min-height:33px
+}
+
 main{
   margin: 15px 5px 15px 5px;
 }
+
 
 #logoSec{
   width: 115px;
@@ -124,8 +137,13 @@ h1{
 }
 .WindowContent{
 	background:#f4f4f4;
-	margin:0;
-  padding: 0;
+
+	margin:0px;
+	padding-bottom: 23px;
+}
+.hiddenStyle{
+	background-color: #F9C2AE !important;
+
 }
 
 
