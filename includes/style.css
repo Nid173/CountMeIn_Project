@@ -5,6 +5,9 @@ body{
 *{padding: 0; margin: 0 auto;
 /* 	border: solid red 1px; */
 };
+a{
+	text-decoration:none;
+	}
 section,nav,article,header,main{display: block;}
 header{
   height: 62px;
@@ -89,6 +92,7 @@ footer{
 }
 
 h1{
+  padding-left:60px;
   font-family: 'Advent Pro', sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -145,7 +149,9 @@ h1{
 	background-color: #F9C2AE !important;
 
 }
-
+#search-menu a{
+color:#333;	
+}
 
 #search-menu .form-group {
     margin:0;
@@ -153,6 +159,7 @@ h1{
 
     &:first-child { border-color: transparent; }
 }
+
 
 #search-menu .form-control {
   padding: 0px 10px 0 20px;
@@ -267,3 +274,4 @@ background-size:25px 25px;
 #otherPurpose>textarea{
 	border: 1px solid #f89406;
 }
+
