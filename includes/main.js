@@ -1,17 +1,22 @@
 
-var appointmentsArr = new Array(); // empty array
+var appointmentsArr = new Array(); // Appointment array
 
 // object literal notation to create your structures
-appointmentsArr.push({ name1: 'nidal', purposeIndex: '1' });
-appointmentsArr.push({ name1: 'adham', purposeIndex: '0' });
+appointmentsArr.push({ name1: 'nidal', purposeIndex: '1' ,infoContent:'hey im info for nidal'});
+appointmentsArr.push({ name1: 'adham', purposeIndex: '0' ,infoContent:'hey im info for adham'});
+appointmentsArr.push({ name1: 'UnplannedTime', purposeIndex: '0' ,infoContent:'hey im info for adham'});
+appointmentsArr.push({ name1: 'adham', purposeIndex: '0' ,infoContent:'hey im info for adham'});
+appointmentsArr.push({ name1: 'Break', purposeIndex: '0' ,infoContent:'hey im info for adham'});
+appointmentsArr.push({ name1: 'adham', purposeIndex: '0' ,infoContent:'hey im info for adham'});
+appointmentsArr.push({ name1: 'UnplannedTime'});
+appointmentsArr.push({ name1: 'Break'});
 
-var purposeArr = new Array(); // empty array
+var purposeArr = new Array(); // Purpose array
 
 // object literal notation to create your structures
 purposeArr.push({ purposeName: 'Kill', time: '1Hour' });
 purposeArr.push({ purposeName: 'ghi', time: '30Minutes' });
 
-// PLUS MINUS
 
 
 
@@ -20,15 +25,46 @@ function addTableRow(){
 	
 	for (var i = 0; i < appointmentsArr.length; i++) {
   // use array[i] here 
-  var code2Append = 			`
-  								<tr>
-							     <th scope="row" ><div class="toggle"></div></th>
-							     <div class="content">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-							     <td>`+appointmentsArr[i].name1+  `</td>
+  //check if syntax
+  if(appointmentsArr[i].name1=='UnplannedTime'){
+	  var code2Append = 	  `<tr>
+							   <td  class="alert-warning"> 
+							   		 &nbsp;<span class="glyphicon glyphicon-warning-sign alert-warning"></span> 
+							   </td>
+							   <td class="alert-warning"> UnplannedTime </td>
+							   <td class="alert-warning">30Minutes </td>
+							   <td Colspan="" class="alert-warning"><button type="button" class="btn btn-success disabled">Mark as break</button>
+							   <button type="button" class="btn btn-primary disabled">Set appointment</button> </td>
+							   <td class="alert-warning"> </td>
+							  </tr>`;
+  }else if(appointmentsArr[i].name1=="Break"){
+	  var code2Append = `<tr>
+							   <td  class="alert-success"> 
+							   		 &nbsp;<span class="glyphicon glyphicon-ok alert-success"></span>
+							   </td>
+							   <td class="alert-success"> Break </td>
+							   <td class="alert-success">30Minutes </td>
+							   <td class="alert-success"> </td>
+							   <td class="alert-success">&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-remove alert-success"></span></td>
+							  </tr>`;;  
+  }else{
+  var code2Append = 			`<tr >
+							     <th scope="row" ><div  class="toggle"></div></th>
+							     <td>`+ appointmentsArr[i].name1+  `</td>
 							     <td>`+ purposeArr[ appointmentsArr[i].purposeIndex ].time +`</td>
 							     <td>`+ purposeArr[appointmentsArr[i].purposeIndex].purposeName +`</td>
-							     </tr>`;		
+							     <td><button type="button" class="btn" disabled>
+								 <span class="glyphicon glyphicon-cog"></span><span class="caret"></span>
+								 </button>						
+								 </td>
+							     </tr>
+							     <tr  scope="row" id=info`+i+` class="showContent hiddenStyle"><td Colspan="5">
+								 	Info: `+ appointmentsArr[i].infoContent+`
+							     </td></tr><tr></tr>`;
+	}
+	if(i == appointmentsArr.length){
+		
+	}		
 	var mTbody = $('#tbody');
 	mTbody.append(code2Append);
 }
@@ -59,7 +95,7 @@ function DashCalendar(){
   dashsection.children[0].innerHTML=months[date.getMonth()];
   console.log(months[date.getMonth()]);
   var week = {
-    index: ValidateDay(date.getDay()),
+    index: ValidateDay(date.getDay())-3,
     day: days[0],
     date: date.getDate()-3
   };
@@ -87,10 +123,10 @@ function DashCalendar(){
 };
 
 $(document).ready(function(){
-  var $content = $(".content").hide();
-  $(".toggle").on("click", function(e){
+  $('.showContent').hide();
+  $('.toggle').on("click", function(e){
     $(this).toggleClass("expanded");
-    $content.slideToggle();
+	$(this).closest('tr').next('tr').slideToggle();
   });
 });
 

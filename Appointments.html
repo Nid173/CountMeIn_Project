@@ -19,36 +19,42 @@
     <title>CountMeIn</title>
   </head>
   <body>
-    <header>
-      <div class="container-fluid">
-	      <div class="row">
-      <a href="#">
-        <section id="logoSec">
-                  <span id="brandName">OuntMeIn</span>
-        </section>
-      </a>
-      <nav class="navbar navbar-default">
-      <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Dashboard</a></li>
-      <li><a href="#">Appointments</a></li>
-      <li><a href="#">Call appointments</a></li>
-      <li><a href="#">SMS logs</a></li>
-    </ul>
-    </nav>
-    <div class="accountDiv">
-	    <div class="accountName"> Pazita </div>
-    </ul>
-      
-  
-      
-    </div>
-    </div>
-    </header>
+
+
+  <header>
+       <nav class="navbar">
+         <div class="container-fluid">
+           <div class="navbar-header">
+             <a href="#">
+               <section id="logoSec">
+                         <span id="brandName">OuntMeIn</span>
+               </section>
+             </a>
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target= ".navHeaderCollapse">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+         </div>
+ 
+           <div class="collapse navbar-collapse navHeaderCollapse">
+             <ul class="nav navbar-nav">
+             <li class="active"><a href="#">Dashboard</a></li>
+             <li><a href="Appointments.html">Appointments</a></li>
+             <li><a href="#">Call appointments</a></li>
+             <li><a href="#">SMS logs</a></li>
+           </ul>
+           </div>
+ 
+         </div>
+       </nav>
+     </header>
 
 
     <main class="test">
       <div class="container">
         <div class="row">
+<!-- 	        Options Menu -->
 	        	<div class="col-md-offset-1 col-md-3">
 		               <div class="row title OptionHeader radius-top-left bottom-border-none"> 
 						   <div class="whiteLine80"> Options </div>  </div>       
@@ -75,7 +81,8 @@
 				      			
 				      			 </div>
 	        	</div>
-	        <div class="col-md-7 col-xs-12">
+<!-- 	        	Main Content -->
+				<div class="col-md-7 col-xs-12">
 		        		<div class="row title radius-top-right bottom-border-none"> 
 						   <div class="whiteLine80"><span class="glyphicon glyphicon-triangle-left"></span>
 							    Today 
@@ -90,18 +97,20 @@
 					   	</div>
 					   	<div class="row WindowContent radius-bottom-left">
 <!-- 						   		TABLE -->
-						   	<table class="table table-striped">
+						   	<table class="table table-striped ">
 							  <thead>
 							    <tr>
 							      <th scope="col">#</th>
 							      <th scope="col">Full Name</th>
 							      <th scope="col">Time</th>
 							      <th scope="col">Purpose</th>
+							      <th scope="col"></th>
 							    </tr>
 							  </thead>
 							  <tbody id="tbody">
-							  
+<!-- 							  This will be filled by Main.js -->
 							  </tbody>
+							  
 							</table>
 					   	</div>
 	        </div>   
