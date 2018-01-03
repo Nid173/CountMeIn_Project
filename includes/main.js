@@ -17,9 +17,9 @@ purposeArr.push({ purposeName: 'ghi', time: '30Minutes' });
 
 
 function addTableRow(){
-	
+
 	for (var i = 0; i < appointmentsArr.length; i++) {
-  // use array[i] here 
+  // use array[i] here
   var code2Append = 			`
   								<tr>
 							     <th scope="row" ><div class="toggle"></div></th>
@@ -28,12 +28,12 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 							     <td>`+appointmentsArr[i].name1+  `</td>
 							     <td>`+ purposeArr[ appointmentsArr[i].purposeIndex ].time +`</td>
 							     <td>`+ purposeArr[appointmentsArr[i].purposeIndex].purposeName +`</td>
-							     </tr>`;		
+							     </tr>`;
 	var mTbody = $('#tbody');
 	mTbody.append(code2Append);
 }
-	
-							
+
+
 };
 
 function ValidateDay(d){
@@ -48,7 +48,7 @@ function ValidateDayUp(d){
   if(d+1==7){
     d=-1;
   }
-  return d;
+  return ++d;
 };
 
 function DashCalendar(){
@@ -72,7 +72,7 @@ function DashCalendar(){
     var elem = document.createElement('div');
     elem.className = "col-xs-1";
     elem.innerHTML=days[week.index];
-        week.index = ValidateDayUp(week.index)+1;
+    week.index = ValidateDayUp(week.index);
     var insideelem = document.createElement('article');
     insideelem.className ="dateCircle";
     var today = week.date+i;
@@ -80,6 +80,7 @@ function DashCalendar(){
       insideelem.className +=" active";
     insideelem.innerHTML=today;
     elem.appendChild(insideelem);
+		console.log(today+" "+days[week.index-1]);
     if(i==0)
       elem.className+=" col-xs-offset-2";
     dashsection.children[1].children[0].appendChild(elem);
@@ -93,5 +94,3 @@ $(document).ready(function(){
     $content.slideToggle();
   });
 });
-
-
