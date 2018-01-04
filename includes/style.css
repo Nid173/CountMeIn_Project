@@ -54,17 +54,22 @@ nav{
   background-color: #f4f4f4;
 }
 
-nav .active>a{
-  background-color: #92C6E4;
-  font-weight:bold;
-    color:#fff;
-}
+
 nav a{
     color: #000;
 }
 .navbar-nav>li>a {
     padding-top: 21px;
     padding-bottom: 21px;
+    background:#f4f4f4;
+    z-index: 4;
+}
+
+nav .active>a{
+  background-color: #92C6E4;
+  font-weight:bold;
+    color:#fff;
+    z-index: 4;
 }
 .icon-bar{
   border: 1px solid #000;
@@ -269,4 +274,39 @@ background-size:25px 25px;
 #otherPurpose>textarea{
 	border: 1px solid #f89406;
 }
+#button-side-menu{
+	display:none;
+}
 
+@media (max-width:767px){
+#search-menu {
+	height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    padding:0px;
+    margin:0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+#button-side-menu {
+	display:block;
+}
+#button-side-menu a{
+	font-size: 40px;
+	color:#ffffff;
+}
+}
+@media (min-width:768px){
+#search-menu{
+	display:block;
+	position:relative;
+	width: 25%;
+/* 	overflow-x: visible; */
+	}
+}

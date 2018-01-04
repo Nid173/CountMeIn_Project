@@ -61,10 +61,12 @@
             <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pazita
       <span class="caret"></span></a>
+<!--
       <ul class="dropdown-menu">
         <li><a href="#">Profile</a></li>
         <li><a href="#">create Page</a></li>
       </ul>
+-->
     </li>
             </ul>
           </div>
@@ -78,8 +80,9 @@
       <div class="container">
         <div class="row">
 <!-- 	        Options Menu -->
-	        	<div class="col-md-offset-1 col-md-3" id="search-menu">
+	        	<div class="col-md-offset-1 col-sm-3" id="search-menu">
 		               <div class="row title radius-top-left bottom-border-none">
+			               <div id="button-side-menu" class="col-xs-2"><a href="javascript:void(0)" onclick="closeNav()">&times;</a></div>
 						   <div class="whiteLine80"> Options </div>  </div>
 						   	<div class="row title top-border-none" >
 							   		<div class="row">
@@ -98,29 +101,45 @@
 						   	</div>
 			      			<div class="row WindowContent radius-bottom-right">
 				      			<a href="addAppointment.html"><div class="sidebarDiv"><span class="glyphicon">&#xe081;</span> Add appointment</div></a>
-				      			<a href="#"><div class="sidebarDiv"><span class="glyphicon">&#xe082;</span>Cancel appointment</div></a>
-				      			<a href="#"><div class="sidebarDiv"><span class="glyphicon">&#xe006;</span>Rate appointment</div></a>
-				      			<div> 1</div>
+				      			<a href="#"><div class="sidebarDiv"><span class="glyphicon">&#xe082;</span> Cancel appointment</div></a>
+				      			<a href="#"><div class="sidebarDiv"><span class="glyphicon">&#xe006;</span> Rate appointment</div></a>
+				      			
 
 				      			 </div>
 	        	</div>
 
 <!-- 	        	Main Content -->
-				<div class="col-md-7 col-xs-12">
+				<div class="col-sm-7 col-xs-12">
 		        		<div class="row title radius-top-right bottom-border-none"> 
-
+			        		<div id="button-side-menu" class="col-xs-2">
+							<span class="glyphicon" style="cursor:pointer" onclick="openNav()">&#xe258;&#xe258;</span>
+			        		</div>
 						   <div class="whiteLine80"><span class="glyphicon glyphicon-triangle-left"></span>
 							    Today
 							    <span class="glyphicon glyphicon-triangle-right"></span></div>
 						   </div>
 					   	<div class="row title top-border-none">
+						   		<div class="col-md-3">
 						   	    <div class="checkbox disabled">
 						   		<label><input type="checkbox" value="" disabled>Show unplanned time</label>
+						   	    </div>
+						   	    </div><div class="col-md-3"></div>
+						   	    <div class="col-md-6">
+						   		<div class="form-group">
+					                <div class='input-group date' id='datetimepicker1'>
+					                    <input type='text' class="form-control" disabled="true" />
+					                    <span class="input-group-addon">
+					                        <span class="glyphicon glyphicon-calendar" ></span>
+					                    </span>
+					                </div>
+					            </div>
+					    
+
 						   	    </div>
 
 
 					   	</div>
-					   	<div class="row WindowContent radius-bottom-left">
+					   	<div class="row WindowContent radius-bottom-left table-responsive">
 <!-- 						   		TABLE -->
 						   	<table class="table table-striped ">
 							  <thead>
