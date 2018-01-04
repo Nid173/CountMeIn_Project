@@ -153,3 +153,11 @@ $(window).resize(function(){
 });
 
 
+function HideOtherPurpose(){
+	document.getElementById("otherPurpose").style.display="none"
+	document.getElementById("purpose_select").disabled=false;
+}
+function ShowOtherPurpose(){
+	document.getElementById("otherPurpose").style.display="block"
+	document.getElementById("purpose_select").disabled=true;
+}
