@@ -203,6 +203,7 @@ $(window).resize(function() {
 	}
 });
 
+
 function HideOtherPurpose() {
 	document.getElementById("otherPurpose").style.display = "none"
 	document.getElementById("purpose_select").disabled = false;

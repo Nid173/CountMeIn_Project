@@ -20,6 +20,7 @@ header {
 body {
 	font-family: "Helvetica";
 }
+
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
 	vertical-align: middle;
 }
@@ -264,6 +265,7 @@ h1 {
 #otherPurpose>textarea {
 	border: 1px solid #f89406;
 }
+
 #button-side-menu {
 	display: none;
 }
@@ -301,3 +303,4 @@ h1 {
 		width: 25%;
 		/* 	overflow-x: visible; */
 	}
+
