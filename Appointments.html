@@ -1,184 +1,167 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="includes/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="includes/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" async></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-    <script src="includes/js/bootstrap.min.js" async></script>
-        <script src="includes/main.js" async></script>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Abril+Fatface" />
-     <link href="https://fonts.googleapis.com/css?family=Advent+Pro:100" rel="stylesheet">
-
-    <title>CountMeIn</title>
-  </head>
-  <body>
-  <header>
-
-      <nav class="navbar">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a href="#">
-              <section id="logoSec">
-                        <span id="brandName">OuntMeIn</span>
-              </section>
-            </a>
-
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target= ".navHeaderCollapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <ul class="nav navbar-nav navbar-right visible-xs-block user-menu">
-            <li class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pazita
-      <span class="caret"></span></a>
-      <ul class="dropdown-menu">
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">create Page</a></li>
-      </ul>
-      </li>
-            </ul>
-
-        </div>
-
-          <div class="collapse navbar-collapse navHeaderCollapse">
-            <ul class="nav navbar-nav">
-            <li><a href="index.html">Dashboard</a></li>
-            <li class="active"><a href="Appointments.html">Appointments</a></li>
-            <li><a href="#">Call appointments</a></li>
-            <li><a href="#">SMS logs</a></li>
-          </ul>
-
-          <ul class="nav navbar-nav navbar-right hidden-xs">
-            <li class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pazita
-      <span class="caret"></span></a>
-<!--
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="includes/css/bootstrap.min.css" rel="stylesheet">
+	<link href="includes/style.css" rel="stylesheet" type="text/css">
+	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+	</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+	</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js">
+	</script>
+	<script async src="includes/js/bootstrap.min.js">
+	</script>
+	<script async src="includes/main.js">
+	</script>
+	<link href="//fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Advent+Pro:100" rel="stylesheet">
+	<title>CountMeIn</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a href="#">
+					<section id="logoSec">
+						<span id="brandName">OuntMeIn</span>
+					</section></a> <button class="navbar-toggle" data-target=".navHeaderCollapse" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+					<ul class="nav navbar-nav navbar-right visible-xs-block user-menu">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Pazita <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Profile</a>
+								</li>
+								<li>
+									<a href="#">create Page</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html">Dashboard</a>
+						</li>
+						<li class="active">
+							<a href="Appointments.html">Appointments</a>
+						</li>
+						<li>
+							<a href="#">Call appointments</a>
+						</li>
+						<li>
+							<a href="#">SMS logs</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right hidden-xs">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Pazita <span class="caret"></span></a> <!--
       <ul class="dropdown-menu">
         <li><a href="#">Profile</a></li>
         <li><a href="#">create Page</a></li>
       </ul>
 -->
-    </li>
-            </ul>
-          </div>
-
-        </div>
-      </nav>
-     </header>
-
-
-    <main >
-
-      <div class="container">
-        <div class="row">
-<!-- 	        Options Menu -->
-
-	        	<div class="col-md-offset-1 col-sm-3" id="search-menu">
-
-            <h1 class="col-md-offset-4">Appointments</h1>
-
-		               <div class="row title radius-top-left bottom-border-none">
-			               <div id="button-side-menu" class="col-xs-2"><a href="javascript:void(0)" onclick="closeNav()">&times;</a></div>
-						   <div class="whiteLine80"> Options </div>  </div>
-						   	<div class="row title top-border-none" >
-							   		<div class="row">
-								    <div class="col-xs-10 col-xs-offset-1">
-								    <form action="#" method="#" role="search">
-								    <div class="input-group">
-								    <input class="form-control" placeholder="Search . . ." name="srch-term" id="ed-srch-term" type="text">
-								    <div class="input-group-btn">
-								    <button type="submit" id="searchbtn">
-								    search</button>
-								    </div>
-								    </div>
-								    </form>
-								    </div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="container">
+			<div class="row">
+				<!--            Options Menu -->
+				<h1 class="col-md-offset-4">Appointments</h1>
+				<div class="col-md-offset-1 col-sm-3" id="search-menu">
+					<div class="row title radius-top-left bottom-border-none">
+						<div class="col-xs-2" id="button-side-menu">
+							<a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+						</div>
+						<div class="whiteLine80">
+							Options
+						</div>
+					</div>
+					<div class="row title top-border-none">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<form action="#" method="#" role="search">
+									<div class="input-group">
+										<input class="form-control" id="ed-srch-term" name="srch-term" placeholder="Search . . ." type="text">
+										<div class="input-group-btn">
+											<button id="searchbtn" type="submit">search</button>
+										</div>
 									</div>
-						   	</div>
-			      			<div class="row WindowContent radius-bottom-right">
-				      			<a href="addAppointment.html"><div class="sidebarDiv"><span class="glyphicon">&#xe081;</span> Add appointment</div></a>
-				      			<a href="#"><div class="sidebarDiv"><span class="glyphicon">&#xe082;</span> Cancel appointment</div></a>
-				      			<a href="#"><div class="sidebarDiv"><span class="glyphicon">&#xe006;</span> Rate appointment</div></a>
-				      			
-
-				      			 </div>
-	        	</div>
-
-<!-- 	        	Main Content -->
-
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="row WindowContent radius-bottom-right">
+						<a href="addAppointment.html">
+						<div class="sidebarDiv">
+							<span class="glyphicon">&#xe081;</span> Add appointment
+						</div></a> <a href="#">
+						<div class="sidebarDiv">
+							<span class="glyphicon">&#xe082;</span> Cancel appointment
+						</div></a> <a href="#">
+						<div class="sidebarDiv">
+							<span class="glyphicon">&#xe006;</span> Rate appointment
+						</div></a>
+					</div>
+				</div><!--                Main Content -->
 				<div class="col-sm-7 col-xs-12">
-		        		<div class="row title radius-top-right bottom-border-none"> 
-			        		<div id="button-side-menu" class="col-xs-2">
-							<span class="glyphicon" style="cursor:pointer" onclick="openNav()">&#xe258;&#xe258;</span>
-			        		</div>
-
-						   <div class="whiteLine80"><span class="glyphicon glyphicon-triangle-left"></span>
-							    Today
-							    <span class="glyphicon glyphicon-triangle-right"></span></div>
-						   </div>
-					   	<div class="row title top-border-none">
-						   		<div class="col-md-3">
-						   	    <div class="checkbox disabled">
-						   		<label><input type="checkbox" value="" disabled>Show unplanned time</label>
-						   	    </div>
-						   	    </div><div class="col-md-3"></div>
-						   	    <div class="col-md-6">
-						   		<div class="form-group">
-					                <div class='input-group date' id='datetimepicker1'>
-					                    <input type='text' class="form-control" disabled="true" />
-					                    <span class="input-group-addon">
-					                        <span class="glyphicon glyphicon-calendar" ></span>
-					                    </span>
-					                </div>
-					            </div>
-					    
-
-						   	    </div>
-
-
-					   	</div>
-					   	<div class="row WindowContent radius-bottom-left table-responsive">
-<!-- 						   		TABLE -->
-						   	<table class="table table-striped ">
-							  <thead>
-							    <tr>
-							      <th scope="col">#</th>
-							      <th scope="col">Full Name</th>
-							      <th scope="col">Time</th>
-							      <th scope="col">Purpose</th>
-							      <th scope="col"></th>
-							    </tr>
-							  </thead>
-							  <tbody id="tbody">
-
-<!-- 							  This will be filled by Main.js -->
-
-							  </tbody>
-
-							</table>
-					   	</div>
-	        </div>
-        </div>
-      </div>
-
-    </main>
-    <footer>
-
-    </footer>
-       <script>
-    (function(){
-      addTableRow();
-    })();
-    </script>
-
-  </body>
+					<div class="row title radius-top-right bottom-border-none">
+						<div class="col-xs-2" id="button-side-menu">
+							<span class="glyphicon" onclick="openNav()" style="cursor:pointer">&#xe258;&#xe258;</span>
+						</div>
+						<div class="whiteLine80">
+							<span class="glyphicon glyphicon-triangle-left"></span> Today <span class="glyphicon glyphicon-triangle-right"></span>
+						</div>
+					</div>
+					<div class="row title top-border-none">
+						<div class="col-md-3">
+							<div class="checkbox disabled">
+								<label><input disabled type="checkbox" value="">Show unplanned time</label>
+							</div>
+						</div>
+						<div class="col-md-3"></div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<div class='input-group date' id='datetimepicker1'>
+									<input class="form-control" disabled="true" type='text'> <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row WindowContent radius-bottom-left table-responsive">
+						<!--                                TABLE -->
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Full Name</th>
+									<th scope="col">Time</th>
+									<th scope="col">Purpose</th>
+									<th scope="col"></th>
+								</tr>
+							</thead>
+							<tbody id="tbody">
+								<!--                              This will be filled by Main.js -->
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer></footer>
+	<script>
+	   (function(){
+	     addTableRow();
+	   })();
+	</script>
+</body>
 </html>
