@@ -132,6 +132,27 @@ $(document).ready(function(){
 	$(this).closest('tr').next('tr').slideToggle();
   });
 });
+
+function openNav() {
+    document.getElementById("search-menu").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("search-menu").style.width = "0";
+}
+
+function returnNav() {
+    document.getElementById("search-menu").style.width = "25%";
+}
+
+$(window).resize(function(){
+	if ($(window).width() == 768){	
+		// do something here
+		returnNav();
+	}	
+});
+
+
 function HideOtherPurpose(){
 	document.getElementById("otherPurpose").style.display="none"
 	document.getElementById("purpose_select").disabled=false;
@@ -139,5 +160,4 @@ function HideOtherPurpose(){
 function ShowOtherPurpose(){
 	document.getElementById("otherPurpose").style.display="block"
 	document.getElementById("purpose_select").disabled=true;
-
 }
