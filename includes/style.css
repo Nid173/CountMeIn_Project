@@ -22,7 +22,7 @@ body{
 }
 tbody tr:last-child td:first-child{
 	border-bottom-left-radius:9px;
-	
+
 }
 tbody .alert-success{
 	min-height:33px
@@ -79,11 +79,7 @@ footer{
   font-family: 'Advent Pro', sans-serif;
   font-weight: 400;
 }
-@media (min-width: 768px){
-  #logoSec{
-    margin-left: 75px;
-}
-}
+
 
 #dashBoard{
   background-color: #f4f4f4;
@@ -92,7 +88,6 @@ footer{
 }
 
 h1{
-  padding-left:60px;
   font-family: 'Advent Pro', sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -150,7 +145,7 @@ h1{
 
 }
 #search-menu a{
-color:#333;	
+color:#333;
 }
 
 #search-menu .form-group {
@@ -274,4 +269,8 @@ background-size:25px 25px;
 #otherPurpose>textarea{
 	border: 1px solid #f89406;
 }
-
+@media (min-width: 768px){
+  #logoSec{
+    margin-left: 75px;
+}
+}
