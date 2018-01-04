@@ -136,7 +136,7 @@ h1{
 }
 .WindowContent{
 	background:#f4f4f4;
-
+	padding: 0;
 	margin:0px;
 	padding-bottom: 23px;
 }
