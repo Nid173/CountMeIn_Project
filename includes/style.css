@@ -20,6 +20,7 @@ header {
 body {
 	font-family: "Helvetica";
 }
+
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
 	vertical-align: middle;
 }
@@ -297,6 +298,7 @@ h2{
 #otherPurpose>textarea {
 	border: 1px solid #f89406;
 }
+
 #button-side-menu {
 	display: none;
 	color: #f0865a;
@@ -467,6 +469,7 @@ h2{
 	color: rgba(240, 134, 90, 0.7);
 	}
 
+
 #white-shaped-main strong{
 	color: #f0865a;
 }
@@ -518,3 +521,4 @@ h2{
 	top: 0;
 	right: 5px;
 }
+
