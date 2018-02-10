@@ -1,0 +1,12 @@
+{
+"title":"Frequently questions",
+"questions":[
+  {"id":"1","asks":[
+    {"ask":"Who can see my description?","ans":"Page Description is related to page profile .it's visible to everyone..."},
+    {"ask":"How Clients Can Find my Page?","ans":"Clients Can search Your PageName, Clients Can access your page using your name too."},
+  ]},
+  {"id":"2","asks":[
+
+    ]}
+  ]
+}

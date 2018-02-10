@@ -101,15 +101,15 @@
               <div class="form-group row">
                 <label for="customer_name" class="col-md-3 col-xs-12 col-md-offset-1">Customer:</label>
                 <div class="col-md-6 col-xs-12">
-                  <input class="form-control" name="cutomer_name" type="text" placeholder="Costumer's Profile Name" >
+                  <input class="form-control" name="cutomer_name" type="text" placeholder="Costumer's Profile Name" required >
                 </div>
               </div>
 
               <div class="form-group row ">
                 <label for="date" class="col-md-3 col-xs-12 col-md-offset-1">Date:</label>
                 <div class="col-md-6 col-xs-12">
-                  <div class="input-group date" id="date">
-                    <input type="date" class="form-control">
+                  <div class="input-group date">
+                    <input name="date" type="date" class="form-control">
                     <span class="input-group-addon">
                       <span class="glyphicon glyphicon-calendar"></span>
                     </span>
@@ -125,7 +125,7 @@
                 </label>
                 <div class="col-md-6 col-xs-12">
                   <input checked type="radio" class="inline-radio" name="purpose_radio" onclick="HideOtherPurpose();">
-                  <select class="form-control" id="purpose_select" title="Options">
+                  <select class="form-control" id="purpose_select" name="purpose_select" title="Options">
                     <option>Kill</option>
                     <option>ghi</option>
                   </select>
@@ -139,7 +139,7 @@
                   <div class="form-group row" id="otherPurpose">
                     <label class="col-md-3 col-xs-12">Purpose:</label>
                     <div class="col-md-9 col-xs-12">
-                      <input class="form-control" type="text" placeholder="custom">
+                      <input class="form-control" type="text" placeholder="custom" name="custom_purpose">
                     </div>
 
                     <label for="purpose_description" class="col-xs-12">description:</label>

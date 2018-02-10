@@ -30,30 +30,49 @@ tbody .alert-success {
 	min-height: 33px
 }
 #logoSec {
-	width: 115px;
-	height: 62px;
-	padding-top: 23px;
-	margin-left: 10px;
-	display: inline-block;
-	background: url("../images/Count_me_in_logo.png") no-repeat center left;
+    width: 115px;
+    height: 62px;
+    padding-top: 23px;
+    /* margin-left: 10px; */
+    left: 75px;
+    position: absolute;
+    display: inline-block;
+    background: url(../images/Count_me_in_logo.png) no-repeat center left;
 }
-#brandName {
+#logoSec span{
 	margin-left: 22px;
 	font-size: 14px;
 	font-family: "Abril Fatface";
 	color: #000000;
 }
+/* #brandName {
+	margin-left: 22px;
+	font-size: 14px;
+	font-family: "Abril Fatface";
+	color: #000000;
+} */
 nav {
 	background-color: #f4f4f4;
 }
 nav a {
 	color: #000;
 }
+.nav {
+	    /* padding-left: 75px; */
+	    position: absolute;
+	    left: 242px;
+	    top: 0;
+	}
+
 .navbar-nav>li>a {
 	padding-top: 21px;
-	padding-bottom: 21px;
+	padding-bottom: 19px;
 	background: #f4f4f4;
 	z-index: 4;
+}
+.navbar-nav>li>a:hover {
+	background-color: transparent;
+	color: #f0865a;
 }
 nav .active>a {
 	background-color: #92C6E4;
@@ -64,6 +83,7 @@ nav .active>a {
 .icon-bar {
 	border: 1px solid #000;
 }
+
 footer {
 	clear: both;
 	height: 62px;
@@ -82,6 +102,19 @@ h1 {
 	font-family: 'Advent Pro', sans-serif;
 	font-weight: 400;
 	font-size: 24px;
+}
+h2{
+	font-family: 'Advent Pro', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+}
+#profile-content{
+	border-top: 1px solid #f0865a;
+	padding-top: 15px;
+
+}
+.profile-image{
+	width: 32px;
 }
 .title {
 	background-color: #f0865a;
@@ -266,16 +299,97 @@ h1 {
 }
 #button-side-menu {
 	display: none;
+	color: #f0865a;
 }
-@media (max-width:767px) {
+
+
+#user_sec{
+	width: 170px;
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	padding: 23px 25px;
+	height: 62px;
+	border-left: 1px solid #fff;
+}
+.navbar-collapse.collapse {
+    display: inline-block!important;
+	}
+
+#user_sec .dropdown-toggle>img{
+	width: 32px;
+	margin-top: -5px;
+}
+#user_sec .dropdown-menu img{
+
+}
+#navbar-login{
+	width: 300px;
+}
+@media (max-width:900px) {
+
 	h1 {
 		padding: 10px;
+		padding-left: 40%;
+		border-bottom: 1px solid #f0865a;
 	}
+
+/* navbar Responisve*/
+#logoSec{
+	position: relative;
+	left: 10px;
+}
+	#user_sec {
+	    position: relative;
+	    float: right;
+	    padding: 23px 5px;
+	    border-left: none;
+	    border-right: solid 1px #fff;
+	}
+	.nav {
+	    /* padding-left: 75px; */
+	    position: relative;
+	    left: 0;
+		}
+		.navbar-header {
+			float: none;
+	}
+	.navbar-toggle {
+			display: block;
+			padding: 15px 5px;
+			margin: 8px;
+	}
+	.navbar-collapse {
+			border-top: 1px solid transparent;
+			box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+	}
+	.navbar-collapse.collapse {
+			display: none!important;
+	}
+	.navbar-nav {
+			float: none!important;
+			margin: 7.5px -15px;
+	}
+	.navbar-nav>li {
+			float: none;
+	}
+	.navbar-nav>li>a {
+			padding-top: 10px;
+			padding-bottom: 10px;
+	}
+
+	.collapse.in {
+	    display: block !important;
+	}
+
+	/* end of navbar Responisve*/
+
+
 	#search-menu {
 		height: 100%;
-		width: 0px;
 		position: fixed;
 		z-index: 6;
+		width: 0px;
 		top: 0;
 		left: 0;
 		padding: 0px;
@@ -293,11 +407,114 @@ h1 {
 		font-size: 40px;
 		color: #ffffff;
 	}
+
+
+
 }
-@media (min-width:768px) {
-	#search-menu {
-		display: block;
-		position: relative;
-		width: 25%;
-		/* 	overflow-x: visible; */
+.side_menu_hide{
+	width: 0px;
+}
+.side_menu_show{
+	width:100%;
+}
+
+
+/*Adhaaam */
+
+#orange-shaped-main {
+    border-right: 25vw solid transparent;
+    border-bottom: 100vh solid #f0865ae6;
+    height: 0;
+		width: 68.58333%;
+		margin-left: 0px;
+}
+.index-logo {
+    background: url(../images/Count_me_in_logo_Big.png) no-repeat left;
+    background-size: auto 318px;
+    position: relative;
+    top: 35px;
+    left: 20px;
+    min-height: 318px;
+}
+.index-logo>h1{
+	position: absolute;
+	top: 120px;
+	left: 160px;
+	font-size: 72px;
+	color: #f7f6f6e6;
+	font-family: "Helvetica"
+}
+#orange-shaped-main p {
+    position: relative;
+    padding-top: 15px;
+    padding-left: 5px;
+    top: 35px;
+    left: 70px;
+    font-size: 58px;
+    color: #ffffffb3;
+    text-align: center;
+    font-family: 'Alegreya', serif;
+}
+
+#white-shaped-main p {
+	position: absolute;
+	right: 0;
+	top: 107px;
+	left: 645px;
+	font-size: 35px;
+	text-align: center;
+	padding: 5px 15px;
+	color: rgba(240, 134, 90, 0.7);
 	}
+
+#white-shaped-main strong{
+	color: #f0865a;
+}
+
+#white-shaped-main button{
+	width: 144px;
+	height: 35px;
+	border: 1px solid #f0865a;
+	font-size: 18px;
+	color: #f0865a;
+	background-color: transparent;
+	position: absolute;
+	bottom: 30px;
+	right: 40px;
+}
+#white-shaped-main span{
+	position: absolute;
+	right: 170px;
+}
+#signInForm{
+	display: none;
+	position: fixed;
+	z-index: 5;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #0006;
+	overflow: auto;
+}
+#signInForm form{
+	background-color: #fefefe;
+	margin-top: 5%;
+	border: 1px solid #888;
+	padding: 15px;
+}
+
+#signInForm form input{
+	padding: 5px 20px;
+	margin-bottom: 15px;
+}
+
+#signInForm form button{
+	padding: 5px 10px;
+	margin: 15px;
+	min-width: 100px;
+}
+#signInForm form span{
+	position: absolute;
+	top: 0;
+	right: 5px;
+}

@@ -1,3 +1,13 @@
+
+/*Jquery for index Page*/
+$(document).ready(function(){
+    $("button[name='signin']").click(function(){
+        $("#signInForm").show();
+    });
+});
+
+
+
 var appointmentsArr = new Array(); // Appointment array
 // object literal notation to create your structures
 appointmentsArr.push({
@@ -177,6 +187,8 @@ function DashCalendar() {
 		dashsection.children[1].children[0].appendChild(elem);
 	}
 };
+
+
 $(document).ready(function() {
 	$('.showContent').hide();
 	$('.toggle').on("click", function(e) {
@@ -186,20 +198,20 @@ $(document).ready(function() {
 });
 
 function openNav() {
-	document.getElementById("search-menu").style.width = "100%";
+document.getElementById("search-menu").style.width = "100%";
 }
 
 function closeNav() {
-	document.getElementById("search-menu").style.width = "0";
+document.getElementById("search-menu").style.width = "0";
 }
 
 function returnNav() {
-	document.getElementById("search-menu").style.width = "25%";
+	document.getElementById("search-menu").style.width = "";
 }
 $(window).resize(function() {
-	if ($(window).width() == 768) {
+	if ($(window).width() >= 768) {
 		// do something here
-		returnNav();
+		$("#search-menu").css("width","");
 	}
 });
 
